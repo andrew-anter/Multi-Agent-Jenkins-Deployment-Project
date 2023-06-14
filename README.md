@@ -5,10 +5,10 @@ This is a Jenkins deployment with two agents, one for the master and the other f
 This type of deployment is ideal for small teams or organizations that do not need a large-scale Jenkins environment. It is also a good option for organizations that want to test out Jenkins before committing to a larger deployment.
 <ol>
   <li>You need to have a Kubernetes cluster to deploy Jenkins on. You can create a Kubernetes cluster on a cloud provider like Amazon Web Services (AWS), Google Cloud Platform (GCP), or Microsoft Azure.
-  <li>You need to create a namespace for your Jenkins deployment. A namespace is a way to isolate your Jenkins deployment from other deployments on the same cluster.
+  <li>You need to create a namespace for your Jenkins deployment. A namespace is a way to isolate your Jenkins deployment from other deployments on the same cluster.<br/>
     ```bash
       kubectl apply -f namespace.yaml
-    ```
+    ```</li>
   <li>You need to create the master deployment for your Jenkins deployment. The master deployment is responsible for running the Jenkins master server.
     ```bash
       kubectl apply -f service.yaml serviceAccount.yaml volume.yaml deployment.yaml
