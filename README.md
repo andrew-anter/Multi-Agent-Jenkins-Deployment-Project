@@ -1,4 +1,4 @@
-#  jenkins-master-slave-deployment
+#  Multi-Agent-Jenkins-Deployment-Project
 
 This is a Jenkins deployment with two agents, one for the master and the other for the slave. The deployment is on a Kubernetes cluster with both the master and slave on the same node. The slave uses the Docker socket of the master agent, and both agents are in the same namespace.
 
